@@ -1,3 +1,5 @@
+@import "modules/variables";
+
 .chat-main {
   height: 100vh;
   width: calc(100vw - 300px);
@@ -6,7 +8,7 @@
 
   .main-header {
     height: 100px;
-    background-color: #ffffff;
+    background-color: $white;
     border-bottom: 1px solid #eeeeee;
     padding: 0 40px;
     display: flex;
@@ -17,12 +19,12 @@
         
       &__current-group {
         padding-bottom: 15px;
-        color: #333333;
+        color: $black;
         font-size: 20px;
       }
       &__member-list {
         display: flex;
-        color: #999999;
+        color: $gray;
         font-size: 12px;
         
         &__member {
@@ -35,8 +37,8 @@
       line-height: 40px;
       padding: 0 20px;
       margin-top: 28px;
-      border: 1px solid #38aef0;
-      color: #38aef0;
+      border: 1px solid $sky;
+      color: $sky;
       font-size: 16px;
       
     }
@@ -55,17 +57,17 @@
         padding-bottom: 12px;
 
         &__user {
-          color: #333333;
+          color: $black;
           font-size: 16px;
         }
         &__date {
-          color: #999999;
+          color: $gray;
           font-size: 12px;
           padding-left: 15px;
         }
       }
       &__text {
-        color: #434a54;
+        color: $black-other;
         font-size: 14px;
       }
     }
@@ -87,7 +89,7 @@
           height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
-          color: #434a54;
+          color: $black-other;
           border-style: none;
         }
         &__image {
@@ -106,8 +108,8 @@
         height: 50px;
         padding: 0 30px;
         margin-left: 15px;
-        background-color: #38aef0;
-        color: white;
+        background-color: $sky;
+        color: $white;
         cursor: pointer;
       }
     }

@@ -1,3 +1,5 @@
+@import "modules/variables";
+
 .side-bar {
   height: 100vh;
   width: 300px;
@@ -20,7 +22,7 @@
 
       &__user-name {
         width: calc(260px - 60px);
-        color: #ffffff;
+        color: $white;
       }
       &__menu {
         display: flex;
@@ -33,7 +35,7 @@
         &__edit-user {
         }
         &--icon {
-          color: #ffffff;
+          color: $white;
         }
       }
     }
@@ -46,7 +48,7 @@
 
     .group {
       padding-bottom: 40px;
-      color: #ffffff;
+      color: $white;
 
       &__name {
         padding-bottom: 5px;
