@@ -15,7 +15,7 @@
     &__left-box {
       padding-top: 35px;
         
-      &__current-group {
+      &__current__group {
         padding-bottom: 15px;
         color: $black;
         font-size: 20px;
@@ -26,6 +26,7 @@
         font-size: 12px;
         
         &__member {
+          margin-left: 5px;
         }
       }
     }
@@ -36,9 +37,12 @@
       padding: 0 20px;
       margin-top: 28px;
       border: 1px solid $sky;
-      color: $sky;
       font-size: 16px;
-      
+
+      .group-edit__btn {
+        text-decoration-line: none;
+        color: $sky;
+      }
     }
   }
 
@@ -64,32 +68,33 @@
           padding-left: 15px;
         }
       }
-      &__text {
-        color: $black-other;
-        font-size: 14px;
-      }
+    }
+    .message__text {
+      color: $black-other;
+      font-size: 14px;
     }
   }
 
   .form {
     height: 90px;
     background-color: #d2d2d2;
-    padding: 20px 40px;
+    padding: 20px 40px;    
 
-    .form__new-message {
+    .new_message {
       display: flex;
 
-      .input-box {
+      .form__box {
         position: relative;
         width: 100%;
-        display: flex;
-        &__text {
+
+        &__message {
           height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
           color: $black-other;
           border-style: none;
         }
+
         &__image {
           position: absolute;
           top: 10px;
@@ -97,12 +102,13 @@
           font-size: 1.3rem;
           cursor: pointer;
 
-          &__file {
+          .hidden {
             display: none;
           }
         }
       }
-      .submit-btn {
+
+      .form__submit__btn {
         height: 50px;
         padding: 0 30px;
         margin-left: 15px;
